@@ -6,23 +6,23 @@ This repository tracks my implementation of key concepts from Designing Data-Int
 ## Architecture Overview
 
                ┌──────────────────────────────────────────────┐
-               │           Maelstrom CLI Test Runner              │
+               │           Maelstrom CLI Test Runner          │
                └──────────────────────┬───────────────────────┘
                                       │
                          JSON RPC over STDIN / STDOUT
                                       │
                ┌──────────────────────┴───────────────────────┐
-               │              cmd/node/main.go                    │
-               │   - Asynchronous Message Handler Loop            │
-               │   - Thread-safe Lazy Initialization (Once)       │
+               │              cmd/node/main.go                │
+               │   - Asynchronous Message Handler Loop        │
+               │   - Thread-safe Lazy Initialization (Once)   │
                └──────────────────────┬───────────────────────┘
                                       │
                                       ▼
                       ┌──────────────────────────────┐
-                      │    pkg/idgen (Snowflake)        │
-                      │  - Bit-packed Timestamps        │
-                      │  - Worker Node Parsing          │
-                      │  - Atomic Sequence Counter      │
+                      │    pkg/idgen (Snowflake)    │
+                      │  - Bit-packed Timestamps    │
+                      │  - Worker Node Parsing      │
+                      │  - Atomic Sequence Counter  │
                       └──────────────────────────────┘
 
 ## Repository Structure
