@@ -17,12 +17,11 @@ This repository tracks my implementation of key concepts from Designing Data-Int
                │   - Thread-safe Lazy Initialization (Once)   │
                └──────────────────────┬───────────────────────┘
                                       │
-                                      ▼
                       ┌──────────────────────────────┐
-                      │    pkg/idgen (Snowflake)    │
-                      │  - Bit-packed Timestamps    │
-                      │  - Worker Node Parsing      │
-                      │  - Atomic Sequence Counter  │
+                      │    pkg/idgen (Snowflake)     │
+                      │  - Bit-packed Timestamps     │
+                      │  - Worker Node Parsing       │
+                      │  - Atomic Sequence Counter   │
                       └──────────────────────────────┘
 
 ## Repository Structure
